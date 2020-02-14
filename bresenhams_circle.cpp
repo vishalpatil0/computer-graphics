@@ -5,14 +5,22 @@ class vishal
 {
         public:
                void plot(int xc,int yc,int x,int y)
-               {        
+               {        	
+               		delay(5);
                         putpixel(xc+x,yc+y,1);// x,y y,x -x,y -y,x  -x,-y -y,-x x,-y y,-x
+                        delay(5);
                         putpixel(xc+y,yc+x,2);
+                        delay(5);
                         putpixel(xc-x,yc+y,3);
+                        delay(5);
                         putpixel(xc-y,yc+x,4);
+                        delay(5);
                         putpixel(xc-x,yc-y,5);
+                        delay(5);
                         putpixel(xc-y,yc-x,6);
+                        delay(5);
                         putpixel(xc+x,yc-y,7);
+                        delay(5);
                         putpixel(xc+y,yc-x,8);
                 }
 };                                       
